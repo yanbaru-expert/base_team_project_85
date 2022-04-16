@@ -3,5 +3,6 @@
 <% @tasks.each do |task| %>
   <p>
     <%= task.title %>
+    <%= link_to '詳細', "/tasks/#{task.id}", method: :get %>
   </p>
 <% end %>

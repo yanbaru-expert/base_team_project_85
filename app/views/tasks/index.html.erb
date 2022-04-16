@@ -4,5 +4,6 @@
   <p>
     <%= task.title %>
     <%= link_to '詳細', "/tasks/#{task.id}", method: :get %>
+    <%= link_to '編集', "/tasks/#{task.id}/edit", method: :get %>
   </p>
 <% end %>

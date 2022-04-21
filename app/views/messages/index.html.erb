@@ -4,5 +4,7 @@
   <p>
     <%= message.title %>
     <%= link_to '詳細', "/messages/#{message.id}", method: :get %>
+    <%= link_to '編集', "/messages/#{message.id}/edit", method: :get %>
+    <%= link_to '削除', "/messages/#{message.id}", method: :delete, data: {confirm: "削除しますか?"}  %>
   </p>
 <% end %>

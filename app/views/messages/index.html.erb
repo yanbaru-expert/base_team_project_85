@@ -1,0 +1,8 @@
+<h1>タスク 一覧</h1>
+<%= link_to "投稿画面へ", new_message_path %>
+<% @messages.each do |message| %>
+  <p>
+    <%= message.title %>
+    <%= link_to '詳細', "/messages/#{message.id}", method: :get %>
+  </p>
+<% end %>
